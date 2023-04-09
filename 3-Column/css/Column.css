@@ -1,0 +1,228 @@
+html {
+    background-color: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARD STYLING */
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 67%;
+    width: 75%;
+}
+
+.first-card,.second-card,.third-card {
+    height: 100%;
+    width: 30%;
+}
+
+.first-card {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
+}
+
+.second-card {
+    background-color: hsl(184, 100%, 22%)
+}
+
+.third-card {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+}
+
+.card-info {
+    width: 50%;
+    margin-left: 15%;
+    margin-right: auto;
+    margin-top: 14%;
+}
+
+/* CAR PITCURE STYLING */
+
+.car-picture {
+    height: auto;
+    width: 90px;
+}
+
+.headings-car {
+    margin: 2rem 0rem;
+    color: hsl(0, 0%, 95%);
+    font-size: 3.5rem;
+    font-family:  'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+
+/* TEXT STYLING OF DESCRIPTION */
+
+.text-description {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 1.2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    line-height: 1.9rem;
+    width: 125%;
+}
+
+/* BUTTON STYLING */
+
+.button {
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 2rem;
+    border: none;
+    padding: 1.2rem 2.7rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.28rem;
+    margin-top: 145px;
+}
+
+.first {
+    color: hsl(31, 77%, 52%);
+}
+
+.second {
+    color: hsl(184, 100%, 22%);
+}
+
+.third {
+    color: hsl(179, 100%, 13%);
+}
+
+/* HOVER STYLING */
+
+.first:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+.second:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+.third:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 1789px){
+    .button {
+        background-color: hsl(0, 0%, 95%);
+        border-radius: 2rem;
+        border: none;
+        padding: 1rem 2.2rem;
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 1rem;
+        margin-top: 200px;
+    }
+
+    .text-description {
+        color: hsla(0, 0%, 100%, 0.75);
+        font-size: 1rem;
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+        line-height: 1.5rem;
+        width: 125%;
+    }
+}
+
+@media screen and (max-width: 1414px){
+    .button {
+        background-color: hsl(0, 0%, 95%);
+        border-radius: 2rem;
+        border: none;
+        padding: 0.6rem 1.8rem;
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 0.8rem;
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-height: 938px){
+    .button {
+        background-color: hsl(0, 0%, 95%);
+        border-radius: 2rem;
+        border: none;
+        padding: 1rem 2.2rem;
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 1rem;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1114px){
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 75%;
+        min-width: 952px;
+        margin: 84px 0px;
+        flex-direction: column;
+    }
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button {
+        background-color: hsl(0, 0%, 95%);
+        border-radius: 2rem;
+        border: none;
+        padding: 0.7rem 1.0rem;
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 0.9rem;
+        margin-top: 61px;
+    }
+    .card-info {
+        width: 50%;
+        margin-left: 15%;
+        margin-right: auto;
+        margin-top: 14%;
+        height: 500px;
+    }
+    .first-card {
+        background-color: hsl(31, 77%, 52%);
+        border-top-left-radius: 0.7rem;
+        border-top-right-radius: 0.7rem;
+        border-bottom-left-radius: 0rem;
+    }
+    
+    .second-card {
+        background-color: hsl(184, 100%, 22%)
+    }
+    
+    .third-card {
+        background-color: hsl(179, 100%, 13%);
+        border-bottom-left-radius: 0.7rem;
+        border-bottom-right-radius: 0.7rem;
+        border-top-right-radius: 0rem;
+    }
+}
+
+
+
+
